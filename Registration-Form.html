@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Google Dev Fest Registration</title>
+    <link rel="icon" href="images/biometric.png" type="image/x-icon" /> <!--Icon link here-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+            integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <title>5K & 10K Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="material/regstyle.css"><!--Css link here-->
+</head>
+<body style="background-color: #7ccaf7; ">
+    <div class="testbox">
+        <form action="/">
+            <img src="images/banner.jpeg" alt=img height="500px" width=1000px">
+            <hr >
+            <div class="banner"></div>
+            <p>Applicant Registration Form</p>
+            <div class="item">
+                <label for="details">Detailed address of Event Avanue</label>
+                <textarea name="Food" rows="2" cols="20" readonly>10th Mile, Tumkur Main Road , Madavara Post Dasanapura, Hobli, Bengaluru, Karnataka 562123</textarea>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15546.312747279992!2d77.4749!3d13.0625!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x10b800c631021f0e!2sBengaluru%20International%20Exhibition%20Centre!5e0!3m2!1sen!2sin!4v1628962808424!5m2!1sen!2sin"
+                        width="980" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="item">
+                <label for="name">Name<span>*</span></label>
+                <input id="name" type="text" name="name" placeholder="Enter your Full Name" maxlength="35" required />
+            </div>
+            <div class="item">
+                <label for="email">Email Address<span>*</span></label>
+                <input id="email" type="email" name="email" placeholder="Enter a valid E-mail Address" required />
+            </div>
+            <div class="item">
+                <label for="pass">Enter the Invitation code sent by email<span>*</span></label>
+                <input id="pass" type="password" name="pass" maxlength="9" placeholder="Enter Invination code" required />
+            </div>
+            <div class="age">
+                <label for="pass">Enter your age<span>*</span></label>
+                <input id="age" type="number" name="age" maxlength="2" min="18" max="65" placeholder="Enter Age" required />
+            </div>
+            <div class="item">
+                <label for="address">Address<span>*</span></label>
+                <input id="address" type="text" name="address" placeholder="Enter Address" required />
+            </div>
+            <div class="item">
+                <label for="city">City<span>*</span></label>
+                <input id="city" type="text" name="city" placeholder="Enter the name of your city" required />
+            </div>
+            <div class="item">
+                <label for="state">State<span>*</span></label>
+                <input id="state" type="text" name="state" placeholder="Enter the name of your state" required />
+            </div>
+            <div class="item">
+                <p>Select Your Country available in the list below<span>*</span></p>
+                <select>
+                    <option selected value="" disabled selected></option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="USA">USA</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Japan">Japan</option>
+                </select>
+            </div>
+            <div class="item">
+                <label for="zip">Zip<span>*</span></label>
+                <input id="zip" type="text" name="zip" placeholder="Enter your area zipcode" required />
+            </div>
+            <div class="item">
+                <label for="phone">Phone</label>
+                <input id="phone" type="number" name="phone" placeholder="Function temporarily disabled" disabled />
+            </div>
+            <div class="item">
+                <label for="bdate">Date of Birth<span>*</span></label>
+                <input id="bdate" type="datetime-local" name="bdate" max="2021-08-20" min="2011-08-20" required />
+                <input type="week" id="we" name="bdate" />
+                <input type="month" id="we" name="bdate" />
+
+            </div>
+            <div class="item">
+                <label for="diff">Enter the range of difficulty you want for event workshop(s)</label>
+                <input id="diff" type="range" name="diff" required />
+            </div>
+            <div class="question">
+                <label>Gender</label>
+                <div class="question-answer">
+                    <div>
+                        <input type="radio" value="none" id="radio_1" name="gender" required />
+                        <label for="radio_1" class="radio"><span>Male</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" value="none" id="radio_2" name="gender" required />
+                        <label for="radio_2" class="radio"><span>Female</span></label>
+                    </div>
+                    <div>
+                        <input type="radio" value="none" id="radio_3" name="gender" required />
+                        <label for="radio_3" class="radio"><span>Others</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>Number Of Guests accompanying with you</label>
+                <div class="question-answer">
+                    <input type="number" id="num" name="Number" min="0" max="4" step="1" placeholder="Enter the Number of Guests (Extras)" />
+                </div>
+            </div>
+            <div class="item">
+                <label for="clr">Enter your favorite color for security questions<span>*</span></label>
+                <input id="clr" type="color" name="clr" />
+            </div>
+            <h6>Choose the food categorization(if any) </h6>
+            <label class="container">
+                Add Meat and eggs
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                No Dairy
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                Pure Vegetraian
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                Vegan
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+
+            <div class="question">
+                <label>Tell us in brief about your food spefications (If any)</label>
+                <div class="question-answer">
+                    <textarea name="Food" rows="5" cols="120" placeholder="Enter your Food Preferences during the event"></textarea>
+                </div>
+            </div>
+
+            <h6>Identity confirmation: </h6>
+            <label for="Identity">Please Confirm your identity by providing us any of your government ID(s) front and back</label>
+            <input type="file" id="Identity" name="Identity" multiple />
+
+            <div class="btn-block">
+                <button type="submit">SUBMIT</button>
+                <button type="reset" onclick="alert('The form has been reset.')" value="alert">RESET</button>
+                <button type="button" onclick="alert('You have clicked the alert button.')" value="ALERT">ALERT</button>
+            </div>
+        </form>
+    </div>
+    <tfoot>
+        <tr>
+            <td colspan="3">@Copyright MohitEdu PVT Limited 2020</td>
+        </tr>
+    </tfoot>
+</body>
+</html>
